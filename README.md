@@ -1,14 +1,14 @@
 
-# ✅ TODO List App – Version 1.02
+# ✅ TODO List App – Version 1.03
 
-**Build Date:** January 16, 2026 11:15 EST  
-**Description:** A simple, feature-rich TODO list web application with Light/Dark Mode, Auto-refresh, Export/Import, and more.
+**Build Date:** January 16, 2026 11:45 EST  
+**Description:** A responsive, feature-rich TODO list web application with Light/Dark Mode, Auto-refresh, Export/Import, and more.
 
 ---
 
 ## 📂 Files Included
 - `index.html` – Main application file with HTML structure and JavaScript logic.
-- `styles.css` – External stylesheet for layout, colors, and Light/Dark mode.
+- `styles.css` – External stylesheet for layout, colors, Light/Dark mode, and responsive design.
 
 ---
 
@@ -26,6 +26,10 @@
 - **Import tasks from JSON** to restore.
 - **Clear All Data** with automatic backup download.
 - **Persistent storage** using Local Storage.
+- ✅ **Responsive Design** for mobile and tablet:
+  - Stacks input fields vertically on small screens.
+  - Full-width buttons for easy tapping.
+  - Adjusted font sizes and carousel item widths for smaller devices.
 
 ---
 
@@ -44,23 +48,19 @@
 ---
 
 ## ✅ Version History
+- **1.03:**  
+  - Added responsive design for mobile and tablet.
+  - Preserved Light/Dark mode functionality.
+  - Updated build date/time for version tracking.
 - **1.02:**  
-  - External CSS file added.  
-  - Light/Dark mode fixed using CSS variable overrides on `body`.  
-  - Carousel text visibility improved.  
-  - Build date/time hardcoded for version tracking.
+  - External CSS file added.
+  - Light/Dark mode fixed using CSS variable overrides on `body`.
+  - Carousel text visibility improved.
 
 ---
 
 ## ✅ Browser Compatibility
 - Works on all major browsers supporting HTML5, CSS3, and JavaScript ES6.
-
----
-
-## ✅ Future Enhancements
-- Drag-and-drop task reordering.
-- Cloud sync for tasks.
-- Mobile-friendly responsive design improvements.
 
 ---
 

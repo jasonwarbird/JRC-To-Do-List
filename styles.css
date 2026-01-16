@@ -2,9 +2,9 @@
 /* 
 ========================================================
 Stylesheet: styles.css
-Version: 1.02
-Build Date: January 16, 2026 11:15 EST
-Description: Styling for TODO List App with Light/Dark Mode
+Version: 1.03
+Build Date: January 16, 2026 11:45 EST
+Description: Responsive styling for TODO List App with Light/Dark Mode
 ========================================================
 */
 
@@ -147,4 +147,40 @@ body.dark-mode {
     --bg-color: #1e1e1e;
     --text-color: #f1f1f1;
     --card-color: #2c2c2c;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+    .input-container, .sort-container, .timer-container, .file-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    input, select, button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .carousel-item {
+        min-width: 150px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-title {
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
 }

@@ -10,9 +10,9 @@
 <!-- 
 ========================================================
 HTML File: index.html
-Version: 1.02
-Build Date: January 16, 2026 11:15 EST
-Description: TODO List App with Light/Dark Mode, Export/Import, Auto-refresh, Carousel
+Version: 1.03
+Build Date: January 16, 2026 11:45 EST
+Description: Responsive TODO List App with Light/Dark Mode, Export/Import, Auto-refresh, Carousel
 ========================================================
 -->
 </head>
@@ -52,10 +52,10 @@ Description: TODO List App with Light/Dark Mode, Export/Import, Auto-refresh, Ca
     <div class="carousel" id="carousel"></div>
 </div>
 <ul id="todo-list"></ul>
-<footer>&copy; Jason Compton | Version 1.02 | Build Date: January 16, 2026 11:15 EST</footer>
+<footer>&copy; Jason Compton | Version 1.03 | Build Date: January 16, 2026 11:45 EST</footer>
 
 <script>
-// Full JavaScript logic
+// Full JavaScript logic (unchanged from previous working version)
 const input=document.getElementById('todo-input'),dueInput=document.getElementById('due-date'),prioritySelect=document.getElementById('priority'),addBtn=document.getElementById('add-btn'),clearBtn=document.getElementById('clear-btn'),sortOption=document.getElementById('sort-option'),refreshInput=document.getElementById('refresh-interval'),autoRefreshCheckbox=document.getElementById('auto-refresh'),refreshBtn=document.getElementById('refresh-btn'),countdownDisplay=document.getElementById('countdown'),list=document.getElementById('todo-list'),carousel=document.getElementById('carousel'),colorPicker=document.getElementById('color-picker'),exportBtn=document.getElementById('export-btn'),importBtn=document.getElementById('import-btn'),importFile=document.getElementById('import-file'),clearAllBtn=document.getElementById('clear-all-btn'),modeToggle=document.getElementById('mode-toggle');
 let tasks=JSON.parse(localStorage.getItem('tasks'))||[],refreshTimer,countdownTimer,countdownValue=parseInt(refreshInput.value);
 
