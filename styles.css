@@ -1,0 +1,150 @@
+
+/* 
+========================================================
+Stylesheet: styles.css
+Version: 1.02
+Build Date: January 16, 2026 11:15 EST
+Description: Styling for TODO List App with Light/Dark Mode
+========================================================
+*/
+
+:root {
+    --theme-color: #0078d7;
+    --bg-color: #f9f9f9;
+    --text-color: #333;
+    --card-color: #fff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 { text-align: center; }
+
+.input-container, .sort-container, .timer-container, .file-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input, button, select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#add-btn, #clear-btn, #refresh-btn, #export-btn, #import-btn, #clear-all-btn, #mode-toggle {
+    background: var(--theme-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#add-btn:hover, #clear-btn:hover, #refresh-btn:hover, #export-btn:hover, #import-btn:hover, #clear-all-btn:hover, #mode-toggle:hover {
+    background: #005fa3;
+}
+
+.carousel-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.carousel-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px;
+    background: var(--card-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.carousel-item {
+    min-width: 200px;
+    background: #ffe5e5;
+    border: 1px solid #ff4d4d;
+    border-radius: 6px;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+    color: #000; /* Always black text */
+}
+
+.carousel-item strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+li {
+    background: var(--card-color);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.task-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+.priority-label {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: white;
+}
+
+.priority-low { background-color: green; }
+.priority-normal { background-color: orange; }
+.priority-high { background-color: red; }
+
+.overdue { color: red; font-weight: bold; }
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-color);
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+#countdown { font-weight: bold; color: var(--theme-color); }
+
+/* ✅ Light/Dark Mode Fix */
+body.dark-mode {
+    --bg-color: #1e1e1e;
+    --text-color: #f1f1f1;
+    --card-color: #2c2c2c;
+}
